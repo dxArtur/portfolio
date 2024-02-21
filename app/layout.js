@@ -8,7 +8,7 @@ import { Righteous } from 'next/font/google'
 
 export const metadata = {
   title: 'Daniel Artur Full-stack developer',
-  description: 'Minha página de portfólio',
+  description: 'Meu portfólio',
 }
 
 export default function RootLayout({ children }) {
