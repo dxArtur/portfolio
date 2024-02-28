@@ -28,9 +28,9 @@ export default function Home() {
           <div className='flex justify-center items-center'>
             <h1 className='text-8xl font-bold'>Full-stack</h1>
             <div className='flex text-3xl  drop-shadow text-pink-500  space-x-2'>
-              <a className='hover:text-cyan-300' href='https://github.com/dxArtur' target="_blank" rel="noopener noreferrer"><FaGithub/></a>
-              <a className='hover:text-cyan-300' href='Currículo.pdf' download><IoDocumentText/></a>
-              <a className='hover:text-cyan-300' href='https://github.com/dxArtur' target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+              <a id="my-github-link-icon" className='hover:text-cyan-300' href='https://github.com/dxArtur' target="_blank" rel="noopener noreferrer"><FaGithub/></a>
+              <a id="cv-download-icon" className='hover:text-cyan-300' href='Currículo.pdf' download><IoDocumentText/></a>
+              <a id="my-linkedin-link-icon" className='hover:text-cyan-300' href='https://www.linkedin.com/in/daniel-artur-28a410219/' target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
             </div>
           </div>
           <div className='flex justify-end'>
