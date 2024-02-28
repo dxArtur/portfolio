@@ -24,7 +24,7 @@ export default function Home() {
       <div className="">
       <header className="  h-screen">
         <div className='flex flex-col justify-center items-center h-screen bg-teal-500'>
-          <h3 className='text-xl font'>Oi, me chamo DANIEL ARTUR, e faço coisas pra internet :)</h3> 
+          <h3 id="greet" className='text-xl font'>Oi, me chamo DANIEL ARTUR, e faço coisas pra internet :)</h3> 
           <div className='flex justify-center items-center'>
             <h1 className='text-8xl font-bold'>Full-stack</h1>
             <div className='flex text-3xl  drop-shadow text-pink-500  space-x-2'>
