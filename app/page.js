@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className='flex w-full justify-end'>
             <div className='w-1/2 '>
-              <p className='font-koblenz-light text-base px-16 py-2 text-right'>tenho 21 anos e me interesso por clean code e tenho um ano de experiência trabalhando como desenvolvedor full-stack freelancer </p>
+              <p id="bio" className='font-koblenz-light text-base px-16 py-2 text-right'>tenho 21 anos e me interesso por clean code e tenho um ano de experiência trabalhando como desenvolvedor full-stack freelancer </p>
             </div>
           </div>
         </div>
