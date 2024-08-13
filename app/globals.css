@@ -28,11 +28,15 @@ body {
 }
 
 .button-link{
-  @apply hover:text-white hover:bg-pink-500 rounded-md pl-2 pr-2 text-emerald-800 bg-cyan-400/80 flex text-center items-center justify-center gap-1 h-full;
+  @apply hover:text-white hover:bg-pink-500 rounded px-2 text-gray-800 bg-cyan-400/90 border border-cyan-800/20 drop-shadow-md flex text-center items-center justify-center gap-1 h-full;
 }
 
 .image-project:hover{
   @apply scale-125;
+}
+
+.checkbox{
+  background: #38b2AC;
 }
 
 
