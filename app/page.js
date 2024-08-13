@@ -146,9 +146,9 @@ export default function Home() {
               {/* <ul className='flex flex-wrap items-start // className='rounded w-1/2 justify-center items-center bg-gray-700/90''> */}
               <ul  className='bg-slate-100 p-2 flex flex-wrap rounded-b grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-start'>
               {tech.filter(item => item.type.includes(type)).map(techItem =>(
-                <div className='flex shadow-sm items-center bg-slate-100/30 rounded border border-slate-400/30 w -2/5 border border-1 p-2 gap-2 m-2 '>
+                <div key={techItem.name} className='flex shadow-sm items-center bg-slate-100/30 rounded border border-slate-400/30 w -2/5 border border-1 p-2 gap-2 m-2 '>
                   
-                    <Image key={techItem.name} className='' align="center" alt={techItem.name} height="30" width="40" src={techItem.src}/>
+                    <Image  className='' align="center" alt={techItem.name} height="30" width="40" src={techItem.src}/>
                     <h3 className='font-medium text-sky-950 truncate w-24'>{techItem.name}</h3>
                   </div>
               ))}
