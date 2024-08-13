@@ -65,7 +65,7 @@ export default function Home() {
           {projects.map(project =>(
 
           
-            <div className='border border-cyan-800/900 p-5 rounded flex flex-col space-y-4 justify-center items-center mx-auto'>
+            <div key={project.name} className='border border-cyan-800/900 p-5 rounded flex flex-col space-y-4 justify-center items-center mx-auto'>
                 {project.status === 'developtment' && (
                   <div className='flex flex-row gap-1 '>
                     <a className='truncate button-link ' href='https://github.com/dxArtur/is.sues' target="_blank" rel="noopener noreferrer"> <IoGitBranchOutline /> em desenvolvimento</a>
@@ -82,7 +82,7 @@ export default function Home() {
                 )}
               
               
-              <img className='image-project w-7/12 max-w-md' loading='lazy' src={project.src}></img>
+              <img className='image-project w-7/12 max-w-md' loading='lazy' alt={project.name} src={project.src}></img>
               <h2 className='text-gray-800  font-bold max-w-s'>
                 {project.name}
               </h2>
@@ -141,14 +141,14 @@ export default function Home() {
           <h1 className='    item-center justify-center text-2xl font-bold text-teal-500' >Tecnologias que eu domino</h1>
           <div className=' p-4 grid grid-cols-2  gap-4 items-start justify-center '>
           {types.map(type => (
-            <div className=''>
+            <div key={type} className=''>
               <h3 className='rounded-t font-bold p-2 pl-4 text-start text-slate-700 bg-slate-100 -cyan-400/50 '>{type}</h3>
               {/* <ul className='flex flex-wrap items-start // className='rounded w-1/2 justify-center items-center bg-gray-700/90''> */}
               <ul  className='bg-slate-100 p-2 flex flex-wrap rounded-b grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-start'>
               {tech.filter(item => item.type.includes(type)).map(techItem =>(
                 <div className='flex shadow-sm items-center bg-slate-100/30 rounded border border-slate-400/30 w -2/5 border border-1 p-2 gap-2 m-2 '>
                   
-                    <img className='' align="center" alt={techItem.name} height="30" width="40" src={techItem.src}></img>
+                    <img key={techItem.name} className='' align="center" alt={techItem.name} height="30" width="40" src={techItem.src}></img>
                     <h3 className='font-medium text-sky-950 truncate w-24'>{techItem.name}</h3>
                   </div>
               ))}
