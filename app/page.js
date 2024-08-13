@@ -82,7 +82,7 @@ export default function Home() {
                 )}
               
               
-              <img className='image-project w-7/12 max-w-md' loading='lazy' alt={project.name} src={project.src}></img>
+              <Image className='image-project w-7/12 max-w-md' loading='lazy' alt={project.name} src={project.src}/>
               <h2 className='text-gray-800  font-bold max-w-s'>
                 {project.name}
               </h2>
@@ -148,7 +148,7 @@ export default function Home() {
               {tech.filter(item => item.type.includes(type)).map(techItem =>(
                 <div className='flex shadow-sm items-center bg-slate-100/30 rounded border border-slate-400/30 w -2/5 border border-1 p-2 gap-2 m-2 '>
                   
-                    <img key={techItem.name} className='' align="center" alt={techItem.name} height="30" width="40" src={techItem.src}></img>
+                    <Image key={techItem.name} className='' align="center" alt={techItem.name} height="30" width="40" src={techItem.src}/>
                     <h3 className='font-medium text-sky-950 truncate w-24'>{techItem.name}</h3>
                   </div>
               ))}
